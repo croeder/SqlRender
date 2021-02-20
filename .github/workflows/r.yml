@@ -49,7 +49,5 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v1
         with: 
-            java-version:'9.0.4'
-            java-package: jdk
-            #architecture: x64
+            java-version: 1.8
         run:  mvn --batch-mode package
