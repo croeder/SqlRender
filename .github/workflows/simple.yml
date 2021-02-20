@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-16.04
     steps:
         - name: boo
-            run:
+            run: |
                 echo "boo"
