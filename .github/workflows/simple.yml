@@ -6,9 +6,5 @@ on:
 jobs:
   build:
     steps:
-        - uses: actions/checkout@master
-        - uses: r-lib/actions/setup-r@v1
         - name: boo
-            with:
-                r-version: '3.5.3' # The R version to download (if necessary) and use.
-            run: Rscript -e 'print("hello")'
+          shell: echo "testing"
