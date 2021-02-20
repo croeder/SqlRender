@@ -44,15 +44,9 @@ jobs:
 #        run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
 #        shell: Rscript {0}
 #
-      - name: Where am I
-        run: pwd
-      - name: What is here
-        run: ls
-      - name: What is here 2
-        run: ls ..
-#      - name: Set up Java
-#        uses: actions/setup-java@v1
-#        with: 
-#            java-version: 1.8
-#      - name: build with maven
-#        run:  mvn --batch-mode package
+      - name: Set up Java
+        uses: actions/setup-java@v1
+        with: 
+            java-version: 1.8
+      - name: build with maven
+        run:  mvn --batch-mode package
