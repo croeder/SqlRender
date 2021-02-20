@@ -1,0 +1,9 @@
+
+steps:
+    - uses: actions/checkout@master
+    - uses: r-lib/actions/setup-r@v1
+        with: 
+            r-version: '3.5.3'
+    - run: Rscript -e 'print("hello")
+    - run: echo "Hello"
+
