@@ -48,6 +48,7 @@ jobs:
         run: pwd
       - name: Set up Java
         uses: actions/setup-java@v1
+      - name: build with maven
         with: 
             java-version: 1.8
         run:  mvn --batch-mode package
