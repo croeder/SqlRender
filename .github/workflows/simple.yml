@@ -7,5 +7,5 @@ jobs:
   build:
     steps:
         - name: boo
-            run: 
+            run:
                 echo "barf"
