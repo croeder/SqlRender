@@ -34,6 +34,8 @@ jobs:
         uses: r-lib/actions/setup-r@v1
         with:
           r-version: ${{ matrix.r-version }}
+      - name: JavaR  reconf
+        run: R CMD javareconf 
       - name: Install dependencies
         run: |
           install.packages(c("remotes", "rcmdcheck"))
