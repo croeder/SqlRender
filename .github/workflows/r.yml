@@ -48,6 +48,8 @@ jobs:
         run: pwd
       - name: What is here
         run: ls
+      - name: What is here 2
+        run: ls ..
 #      - name: Set up Java
 #        uses: actions/setup-java@v1
 #        with: 
