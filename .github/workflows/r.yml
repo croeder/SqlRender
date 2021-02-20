@@ -34,8 +34,8 @@ jobs:
     steps:
       #- uses: actions/checkout@v2
       - uses: actions/checkout@master
-      - name: basic test 1
-          run: echo "basic test 1"
+#      - name: basic test 1
+#          run: echo "basic test 1"
       - name: basic test 2
           run: Rscript -e 'print("basic test 2")'
       - name: Set up R ${{ matrix.r-version }}
