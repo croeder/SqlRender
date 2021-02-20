@@ -46,6 +46,8 @@ jobs:
 #
       - name: Where am I
         run: pwd
+      - name: What is here
+        run: ls
 #      - name: Set up Java
 #        uses: actions/setup-java@v1
 #        with: 
