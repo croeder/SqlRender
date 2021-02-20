@@ -15,4 +15,5 @@ jobs:
         with:
           r-version: ${{ matrix.r-version }}
       - name: basic test 2
-          run: Rscript -e 'print("basic test 2")'
+        run: echo "boo"
+        run: Rscript -e 'print("basic test 2")'
