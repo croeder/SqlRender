@@ -49,8 +49,9 @@ jobs:
             java-version: 1.8
       - name: build with maven
         run:  mvn --batch-mode package
-      - name: upload
+      - name: mkdirs
         run: mkdir staging && cp target/*.jar staging
+      - name: upload
         uses: actions/upload-artifact@v2
         with:
           name: Package
