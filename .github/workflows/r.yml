@@ -51,5 +51,5 @@ jobs:
         with: 
             java-version:'9.0.4'
             java-package: jdk
-            architecture: x64
+            #architecture: x64
         run:  mvn --batch-mode package
