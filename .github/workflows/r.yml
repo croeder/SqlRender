@@ -55,14 +55,13 @@ jobs:
       - name: build R package
         run: cd ..; R CMD build SqlRender
 
-#      - name: mkdirs
-#        run: mkdir staging && cp target/*.jar staging && cp ../SqlRender_1.6.8.tar.gz staging
+      - name: mkdirs
+        run: mkdir staging && cp ../SqlRender_1.6.8.tar.gz staging
       - name: upload
         uses: actions/upload-artifact@v2
         with:
           name: Package
-#          path: staging
-          path: ../SqlRender_1.6.8.tar.gz
+          path: staging
 
       - name: create release
         id: create_release
